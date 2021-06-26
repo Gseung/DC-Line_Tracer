@@ -1,0 +1,60 @@
+---- g_int32shift_level Matches (93 in 5 files) ----
+Extremerun.c (main):	g_int32shift_level = 0;
+Extremerun.c (main):	g_int32shift_level = 4;
+Extremerun.c (main):	g_int32shift_level = 0;	// 4
+Extremerun.c (main):	g_int32shift_level = 6;
+Extremerun.c (main):	g_int32shift_level = 0;	//5
+Extremerun.c (main):	g_int32shift_level = 6;
+Extremerun.c (main):	g_int32shift_level = 0;	//6
+Extremerun.c (main):	g_int32shift_level = 6;
+Extremerun.c (main):	g_int32shift_level = 0;	//6
+Extremerun.c (main):				pinfo->q7shift_before = (( pinfo - 1 )->int32turn_dir & RIGHT_TURN )? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];
+Extremerun.c (main):				pinfo->q7shift_before = (( pinfo - 1 )->int32turn_dir & RIGHT_TURN )? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];
+Extremerun.c (main):		pinfo->q7shift_after = (( pinfo + 1 )->int32turn_dir & RIGHT_TURN )? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];
+Extremerun.c (main):				pinfo->q7shift_after = (( pinfo + 1 )->int32turn_dir & RIGHT_TURN )? right_table[ g_int32shift_level + 1 ] : left_table[ g_int32shift_level + 1 ];
+Extremerun.c (main):			pinfo->q7shift_after = (( pinfo + 1 )->int32turn_dir & RIGHT_TURN )? right_table[ g_int32shift_level + 2 ] : left_table[ g_int32shift_level + 2 ];
+Extremerun.c (main):			pinfo->q7shift_after = (( pinfo + 1 )->int32turn_dir & RIGHT_TURN )? right_table[ g_int32shift_level + 3 ] : left_table[ g_int32shift_level + 3 ];
+Extremerun.c (main):		pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 1 ] : left_table[ g_int32shift_level + 1 ];
+Extremerun.c (main):					pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];
+Extremerun.c (main):					pinfo->q7shift_before = ( ( pinfo + 1 )->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];
+Extremerun.c (main):				pinfo->q7shift_before = ( ( pinfo + 1 )->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 1 ] : left_table[ g_int32shift_level + 1 ];
+Extremerun.c (main):				pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 1 ] : left_table[ g_int32shift_level + 1 ]; 
+Extremerun.c (main):					if( g_int32shift_level > 2 )	g_int32shift_level = 2;
+Extremerun.c (main):						pinfo->q7shift_before = ( ( pinfo + 0 )->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];
+Extremerun.c (main):						pinfo->q7shift_before = ( ( pinfo + 1 )->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];					
+Extremerun.c (main):					pinfo->q7shift_before = ( ( pinfo + 1 )->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];	
+Extremerun.c (main):					pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];
+Extremerun.c (main):				pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];  //다음이 직진이므로 현재 방향으로 쉬프트.		
+Extremerun.c (main):					pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 1 ] : left_table[ g_int32shift_level + 1 ];
+Extremerun.c (main):					if( g_int32shift_level > 2 )	g_int32shift_level = 2;
+Extremerun.c (main):					pinfo->q7shift_before = ( ( pinfo + 1 )->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ]; //방향 바로 틀자!!
+Extremerun.c (main):	pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];
+Extremerun.c (main):			pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 2 ] : left_table[ g_int32shift_level + 2 ];
+Extremerun.c (main):			pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 3 ] : left_table[ g_int32shift_level + 3 ];
+Extremerun.c (main):		pinfo->q7shift_after = ( ( pinfo + 1 )->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];	
+Extremerun.c (main):		pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 3 ] : left_table[ g_int32shift_level + 3 ]; 
+Extremerun.c (main):			pinfo->q7shift_after = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];
+Extremerun.c (main):		pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 2 ] : left_table[ g_int32shift_level + 2 ]; 
+Extremerun.c (main):		pinfo->q7shift_after = ( ( pinfo + 1 )->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];	
+Extremerun.c (main):	pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 3 ] : left_table[ g_int32shift_level + 3 ]; 
+Extremerun.c (main):		pinfo->q7shift_after = ( ( pinfo + 1 )->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ]; 
+Extremerun.c (main):		pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 3 ] : left_table[ g_int32shift_level + 3 ]; 
+Extremerun.c (main):			pinfo->q7shift_after = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];
+Extremerun.c (main):		pinfo->q7shift_before = ( pinfo->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level + 2 ] : left_table[ g_int32shift_level + 2 ]; 
+Extremerun.c (main):		pinfo->q7shift_after = ( ( pinfo + 1 )->int32turn_dir & RIGHT_TURN ) ? right_table[ g_int32shift_level ] : left_table[ g_int32shift_level ];	
+Extremerun.c (main):	//g_int32shift_level = 1;
+Main.c (main):	g_int32shift_level = 3;			// 시프트 레벨
+Menu.c (main):				g_int32shift_level += 1;
+Menu.c (main):				g_int32shift_level -= 1;
+Menu.c (main):				VFDPrintf("shft  %2ld", g_int32shift_level);
+Menu.c (main):					case 0 : g_int32shift_level += 1;
+Menu.c (main):							 VFDPrintf("%8ld", g_int32shift_level );
+Menu.c (main):					case 0 : g_int32shift_level -= 1;
+Menu.c (main):							 VFDPrintf("%8ld", g_int32shift_level );
+Rom.c (main):	etc_sarr[ i++ ] = ( ( ( Uint16 )g_int32shift_level ) >> 0 ) & 0xff;
+Rom.c (main):	etc_sarr[ i++ ] = ( ( ( Uint16 )g_int32shift_level ) >> 8 ) & 0xff;
+Rom.c (main):	g_int32shift_level = ( ( etc_larr[ i++ ] & 0xff ) << 0 );
+Rom.c (main):	g_int32shift_level |= ( ( etc_larr[ i++ ] & 0xff ) << 8 );	
+Rom.c (main):	SCIa_Printf("End Dist : %ld\nLimit TurnMark : %ld\n127 Mark dist : %ld\nShift Level : %ld\n", g_int32end_dist, g_int32limit_mark, g_int32turn_dist, g_int32shift_level ); 
+Rom.c (main):	g_int32shift_level = 0;
+Variable.h (main):__VARIABLE_EXT__ volatile int32			g_int32shift_level; 
